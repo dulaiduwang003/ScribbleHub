@@ -1,0 +1,30 @@
+spring:
+  data:
+    # redis配置
+    redis:
+      database: 9
+      host: localhost
+      port: 6379
+      password: ""
+  # mysql配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/super_web?useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=true
+    username: root
+    password: 123
+  mail:
+    host: smtp.qq.com
+    username: 2074055628@qq.com
+    password: 'asdasdasd'
+    default-encoding: UTF-8
+
+# 缓存路径
+file:
+  ## 缓存路径
+  path: /apps/chat/resource/
+
+# 管理员账号
+console:
+  email: '2074055628@qq.com'
+  password: 'asdasdasd'
+
+

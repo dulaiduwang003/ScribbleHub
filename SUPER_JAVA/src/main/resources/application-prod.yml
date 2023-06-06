@@ -1,0 +1,29 @@
+spring:
+  data:
+    redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
+      #无密码就这样就行 ‘’
+      password: ''
+  # 这里方式很多
+  mail:
+    # 这里具体看你 我用的是QQ的
+    host: smtp.qq.com
+    username: 2074055628@qq.com
+    password: 填你的密码
+    default-encoding: UTF-8
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/super_web?useUnicode=true&serverTimezone=UTC
+    username: super_web
+    password: '数据库密码'
+
+# 管理员账号
+console:
+  email: '2074055628@qq.com'
+  password: 'hjxyran003@'
+
+file:
+  ## 缓存路径
+  path: /chatgpt/resource/
+
