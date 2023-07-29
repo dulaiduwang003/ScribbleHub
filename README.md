@@ -11,6 +11,10 @@
 有问题 Wechat ：SeatimeIsland
 
 
+WEB部署视频 - 喂饭级别，可成功部署
+https://www.bilibili.com/video/BV1FX4y1J7D2/
+
+
 web演示视频
 https://www.bilibili.com/video/BV1EX4y1C7jE/?spm_id_from=333.999.0.0&vd_source=247eccf88822f409670040957c2f29a9
 
@@ -152,3 +156,17 @@ VUE_APP_BASE_API = 'https://服务器域名:端口'
 
 2. 微信模拟器运行示例
 ![img.png](/static/img_12.png)
+
+
+## todoList
+  0. [完成]完善B站喂饭级别教程；
+  1. 移动端管理员页面兼容适配；
+  2. 管理员页面补充上下文交互
+  3. 用户端，支持提示词上传和下载，云端管理json预设。后期接口请求，支持用户上传提示词;
+  4. 本地存储会话记录；
+  5. 为每个对话设置系统 Prompt
+  6. 允许用户自行编辑内置 Prompt 列表
+  7. 预制角色：使用预制角色快速定制新对话 
+  8. 分享为图片，分享到 ShareGPT 链接
+  9. 脚本部署,争取做到半自动或者开箱即用
+  10. 推进服务端部署 LocalAI 项目 llama / gpt4all / rwkv / vicuna / koala / gpt4all-j / cerebras / falcon / dolly 等等，或者使用 api-for-open-llm
