@@ -254,5 +254,5 @@ public interface MsgConstants {
     /**
      * The constant LIMIT_NOT.
      */
-    String LIMIT_NOT_ERR = "SUPER不足,请充值";
+    String LIMIT_NOT_ERR = "SUPER币不足,请赞助";
 }
