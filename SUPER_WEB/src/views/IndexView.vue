@@ -512,6 +512,8 @@ export default {
 :deep(.footer-bar) {
   .el-textarea__inner {
     box-shadow: none !important;
+    max-height: 400px;
+    padding: 20px 0px;
 
     &:hover {
       box-shadow: none;
