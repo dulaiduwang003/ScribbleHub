@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ba478bd-f49b-4026-a7a0-4d6cb78de16b" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2SsLT6Nc1EVpcc1BozPDX3upfi4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/20740/Desktop/SUPER_GITHUB/Uniapp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\APP\\apps\\WebStorm\\ch-0\\231.9161.29\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8ba478bd-f49b-4026-a7a0-4d6cb78de16b" name="更改" comment="" />
+      <created>1689930347349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689930347349</updated>
+      <workItem from="1689930349546" duration="1528000" />
+      <workItem from="1689947123008" duration="1476000" />
+      <workItem from="1690000492517" duration="1441000" />
+      <workItem from="1690007324031" duration="2741000" />
+      <workItem from="1690012189828" duration="629000" />
+      <workItem from="1690265558057" duration="4120000" />
+      <workItem from="1690357735131" duration="651000" />
+      <workItem from="1690387278518" duration="152000" />
+      <workItem from="1690392351647" duration="631000" />
+      <workItem from="1690419735570" duration="311000" />
+      <workItem from="1690425371190" duration="28000" />
+      <workItem from="1690435463247" duration="1501000" />
+      <workItem from="1690442778138" duration="741000" />
+      <workItem from="1690445553481" duration="1238000" />
+      <workItem from="1690459950748" duration="595000" />
+      <workItem from="1690560859348" duration="638000" />
+      <workItem from="1690562584555" duration="13000" />
+      <workItem from="1690566381508" duration="13000" />
+      <workItem from="1690568110076" duration="905000" />
+      <workItem from="1690569806103" duration="12000" />
+      <workItem from="1690580917000" duration="617000" />
+      <workItem from="1690792621544" duration="337000" />
+      <workItem from="1691043493089" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

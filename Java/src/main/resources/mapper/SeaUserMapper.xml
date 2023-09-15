@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cn.bdth.mapper.SeaUserMapper">
+
+    <select id="selectUserInfoBySeaUserId" resultType="com.cn.bdth.model.UserInfoModel">
+        SELECT si.uri AS avatar, user_name, open_id, target, si.sea_resource_id
+        FROM sea_user
+                 LEFT JOIN sea_resource si ON sea_user.sea_resource_id = si.sea_resource_id
+        WHERE sea_user_id = #{seaUserId}
+    </select>
+</mapper>

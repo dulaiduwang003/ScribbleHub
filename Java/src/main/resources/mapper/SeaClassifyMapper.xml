@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cn.bdth.mapper.SeaClassifyMapper">
+
+    <select id="connectResourceBasedOnClassifyId" resultType="com.cn.bdth.model.ClassifyCoverModel">
+        SELECT classify_name,
+               target             AS target,
+               si.uri             AS cover,
+               si.sea_resource_id,
+               si.sea_resource_id AS sea_resource_id
+        FROM sea_classify
+                 LEFT JOIN sea_resource si ON sea_classify.sea_resource_id = si.sea_resource_id
+        WHERE sea_classify_id = #{seaClassifyId}
+    </select>
+
+    <select id="connectResourceBasedAll" resultType="com.cn.bdth.vo.AdminBlogClassifyVo">
+        select sea_classify_id, sea_classify.created_time, sr.sea_resource_id, classify_name, uri AS cover
+        from sea_classify
+                 left join sea_resource sr on sea_classify.sea_resource_id = sr.sea_resource_id
+    </select>
+
+
+    <select id="getClassifyMarqueeList" resultType="com.cn.bdth.vo.ClassifyMarqueeVo">
+        select sea_classify_id, sea_classify.is_type, classify_name, uri AS cover
+        from sea_classify
+                 left join sea_resource sr on sea_classify.sea_resource_id = sr.sea_resource_id
+    </select>
+</mapper>

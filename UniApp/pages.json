@@ -1,0 +1,344 @@
+{
+  "pages": [
+    {
+      "path": "pages/master/master",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/super/view/drawingDetailedView",
+      "style": {
+        "navigationBarTitleText": "作品",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        },
+        "usingComponents": {
+          "van-button": "/wxcomponents/vant/button/index"
+        }
+      }
+    },
+    {
+      "path": "pages/super/view/drawingDescriptionView",
+      "style": {
+        "navigationBarTitleText": "Drawing",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        },
+        "usingComponents": {
+          "van-button": "/wxcomponents/vant/button/index"
+        }
+      }
+    },
+    {
+      "path": "pages/super/view/drawingImageView",
+      "style": {
+        "navigationBarTitleText": "Visualize",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        },
+        "usingComponents": {
+          "van-field": "/wxcomponents/vant/field/index",
+          "van-button": "/wxcomponents/vant/button/index",
+          "van-uploader": "/wxcomponents/vant/uploader/index",
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+
+    {
+      "path": "pages/super/view/gptView",
+      "style": {
+        "navigationBarTitleText": "",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        },
+        "usingComponents": {
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+    {
+      "path": "pages/super/view/bingView",
+      "style": {
+        "navigationBarTitleText": "",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        },
+        "usingComponents": {
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+    //SUPER
+    {
+      "path": "pages/choreography/view/dispositionNerveView",
+      "style": {
+        "navigationBarTitleText": "NERVE",
+        "usingComponents": {
+          "van-field": "/wxcomponents/vant/field/index",
+          "van-button": "/wxcomponents/vant/button/index"
+        },
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#ffffff",
+          "backgroundColorTop": "#ffffff",
+          "backgroundColorBottom": "#ffffff",
+          "navigationBarTextStyle": "black"
+        }
+      }
+    },
+    {
+      "path": "pages/blog/blog",
+      "style": {
+        "navigationBarTitleText": "文章详情",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        },
+        "usingComponents": {
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+    {
+      "path": "pages/search/search",
+      "style": {
+        "navigationStyle": "custom",
+        "usingComponents": {
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+    {
+      "path": "pages/classify/classify",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/super/super",
+      "style": {
+        "navigationBarTitleText": "SUPER",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        }
+      }
+    },
+    {
+      "path": "pages/topic/topic",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/choreography/choreography",
+      "style": {
+        "navigationBarTitleText": "任务编排",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        }
+      }
+    },
+    //组件引入
+    {
+      "path": "pages/master/components/loginComponent",
+      "style": {
+        "usingComponents": {
+          "van-button": "/wxcomponents/vant/button/index"
+        }
+      }
+    },
+    {
+      "path": "pages/master/components/personalCenterComponent",
+      "style": {
+        "usingComponents": {
+          "van-tab": "/wxcomponents/vant/tab/index",
+          "van-tabs": "/wxcomponents/vant/tabs/index",
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+    {
+      "path": "pages/master/components/homeComponent",
+      "style": {
+        "usingComponents": {
+          "van-grid": "/wxcomponents/vant/grid/index",
+          "van-grid-item": "/wxcomponents/vant/grid-item/index",
+          "van-divider": "/wxcomponents/vant/divider/index",
+          "van-icon": "/wxcomponents/vant/icon/index",
+          "van-loading": "/wxcomponents/vant/loading/index"
+        }
+      }
+    },
+    {
+      "path": "pages/choreography/view/insertTopicsView",
+      "style": {
+        "navigationBarTitleText": "添加专题",
+        "usingComponents": {
+          "van-field": "/wxcomponents/vant/field/index",
+          "van-button": "/wxcomponents/vant/button/index",
+          "van-uploader": "/wxcomponents/vant/uploader/index"
+        },
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#ffffff",
+          "backgroundColorTop": "#ffffff",
+          "backgroundColorBottom": "#ffffff",
+          "navigationBarTextStyle": "black"
+        }
+      }
+    },
+    {
+      "path": "pages/choreography/view/insertBlogArticleView",
+      "style": {
+        "navigationBarTitleText": "撰写文章",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#ffffff",
+          "backgroundColorTop": "#ffffff",
+          "backgroundColorBottom": "#ffffff",
+          "navigationBarTextStyle": "black"
+        },
+        "usingComponents": {
+          "van-field": "/wxcomponents/vant/field/index",
+          "van-button": "/wxcomponents/vant/button/index",
+          "van-uploader": "/wxcomponents/vant/uploader/index"
+        }
+      }
+    },
+    {
+      "path": "pages/choreography/view/pageBlogArticleView",
+      "style": {
+        "navigationBarTitleText": "文章管理",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        },
+        "usingComponents": {
+          "van-swipe-cell": "/wxcomponents/vant/swipe-cell/index"
+        }
+      }
+    },
+    {
+      "path": "pages/choreography/view/pageBlogClassifyView",
+      "style": {
+        "navigationBarTitleText": "专题管理",
+        "mp-weixin": {
+          "navigationBarBackgroundColor": "#101010",
+          "backgroundColorTop": "#101010",
+          "backgroundColorBottom": "#101010",
+          "navigationBarTextStyle": "white"
+        },
+        "usingComponents": {
+          "van-swipe-cell": "/wxcomponents/vant/swipe-cell/index"
+        }
+      }
+    },
+    {
+      "path": "pages/blog/components/blogContentComponent",
+      "style": {
+        "usingComponents": {
+          "van-divider": "/wxcomponents/vant/divider/index"
+        }
+      }
+    },
+    {
+      "path": "pages/blog/components/commentComponent",
+      "style": {
+        "navigationBarTitleText": "",
+        "usingComponents": {
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+    {
+      "path": "pages/blog/view/replyView",
+      "style": {
+        "navigationBarTitleText": "回复评论",
+        "usingComponents": {
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+    {
+      "path": "pages/search/components/hotComponent",
+      "style": {
+        "navigationBarTitleText": "",
+        "usingComponents": {
+          "van-tab": "/wxcomponents/vant/tab/index",
+          "van-tabs": "/wxcomponents/vant/tabs/index"
+        }
+      }
+    },
+    {
+      "path": "pages/search/components/historyComponent",
+      "style": {
+        "navigationBarTitleText": "",
+        "usingComponents": {
+          "van-divider": "/wxcomponents/vant/divider/index",
+          "van-icon": "/wxcomponents/vant/icon/index"
+        }
+      }
+    },
+    {
+      "path": "pages/search/components/resultComponent",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "wxcomponents/components/LoadingDataComponent",
+      "style": {
+        "navigationBarTitleText": "",
+        "usingComponents": {
+          "van-loading": "/wxcomponents/vant/loading/index"
+        }
+      }
+    },
+    {
+      "path": "pages/choreography/view/pageDrawingView",
+      "style": {
+        "navigationBarTitleText": "绘图管理",
+        "usingComponents": {
+          "van-swipe-cell": "/wxcomponents/vant/swipe-cell/index"
+        }
+      }
+    },
+    {
+      "path": "pages/choreography/view/concerningView",
+      "style": {
+        "navigationBarTitleText": "关于小程序"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "TIME SEA",
+    "navigationBarBackgroundColor": "#101010",
+    "backgroundColor": "#101010"
+  },
+  "uniIdRouter": {}
+}

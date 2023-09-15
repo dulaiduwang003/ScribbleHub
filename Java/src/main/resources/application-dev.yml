@@ -1,0 +1,44 @@
+spring:
+  data:
+    redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
+      password: 'eBI6YnFIEQ5'
+  # mysql配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/sea_time?useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=true
+    username: sea_time
+    password: 'eBI6YnFIEQ5'
+
+# 微信
+we-chat:
+  # APPID
+  appId: '你的微信APPID'
+  # 密钥
+  secret: '你的微信密钥'
+  # 通知模板
+  template: '微信通知模板'
+
+# 百度翻译
+baidu-translation:
+  # 百度翻译Appid
+  appid: ''
+  # 百度翻译密码要
+  secret: ''
+
+
+# 管理员OpebId 多个使用，隔开
+admin: okdYI5GP-ifLzNJEtsnml0u9J3dc,okdYI5K43ZxpjJdZ_hLjz1ABjuuo,
+
+
+#过滤哪些敏感字(需开启文本拦截才生效)
+sensitive: "(CHAT|GPT|OPENAI)"
+
+#是否开启文本拦截 (防止GPT乱说话)
+isSensitive: false
+
+file:
+  # 资源所在路径
+  path: C://upload/
+

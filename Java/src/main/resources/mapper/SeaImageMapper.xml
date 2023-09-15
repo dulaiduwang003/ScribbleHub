@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cn.bdth.mapper.SeaImageMapper">
+
+    <resultMap id="currentUserOpus" type="com.cn.bdth.vo.DrawingImageVo">
+        <result property="image" column="uri"/>
+        <association javaType="com.cn.bdth.model.ImageInfoModel" property="value">
+            <result column="created_time" property="createdTime"/>
+            <result column="prompt" property="prompt"/>
+            <result column="sea_image_id" property="seaImageId"/>
+        </association>
+    </resultMap>
+
+    <select id="getCurrentUserOpus" resultMap="currentUserOpus">
+        select i.sea_image_id, sr.uri, i.prompt, i.created_time
+        from sea_image i
+                 inner join sea_resource sr on i.generate_id = sr.sea_resource_id
+        where i.sea_user_id = #{seaUserId} AND (i.created_time > NOW() - INTERVAL 1 DAY
+            or is_public = 1)
+
+    </select>
+
+
+    <select id="getPublicOpus" resultMap="currentUserOpus">
+        select i.sea_image_id, sr.uri, i.prompt, i.created_time
+        from sea_image i
+                 inner join sea_resource sr on i.generate_id = sr.sea_resource_id
+        where i.is_public = 1
+
+    </select>
+
+    <select id="getAllDrawingOpus" resultType="com.cn.bdth.vo.AdminDrawingVo">
+        select i.sea_image_id, sr.uri as imageUrl, i.is_public
+        from sea_image i
+                 inner join sea_resource sr on i.generate_id = sr.sea_resource_id
+        where i.generate_id is not null
+        order by i.created_time desc
+    </select>
+
+
+</mapper>

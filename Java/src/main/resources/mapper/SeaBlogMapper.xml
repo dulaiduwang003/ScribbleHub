@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cn.bdth.mapper.SeaBlogMapper">
+
+    <select id="selectBlogListWithImage" resultType="com.cn.bdth.vo.BlogRankClassifyVo">
+        SELECT sb.created_time, sb.sea_blog_id AS seaBlogId, sb.sea_user_id AS seaUserId, sb.sea_resource_id AS seaResourceId,
+        sb.title AS title, sb.summary AS summary, si.uri AS uri
+        FROM sea_blog sb
+        LEFT JOIN sea_resource si ON sb.sea_resource_id = si.sea_resource_id
+        WHERE sb.sea_blog_id IN
+        <foreach item='item' index='index' collection='ids' open='(' separator=',' close=')'>
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="selectBlogImageList" resultType="com.cn.bdth.vo.AdminBlogArticleVo">
+        select sea_blog.created_time, sea_blog_id, title, summary, is_recommend, uri AS cover
+        from sea_blog
+                 left join sea_resource sr on sea_blog.sea_resource_id = sr.sea_resource_id
+    </select>
+
+    <select id="countBlogspotClassifyId" resultType="java.lang.Long">
+        SELECT COUNT(*) FROM sea_blog WHERE sea_classify_id=#{seaClassifyId}
+    </select>
+
+
+    <select id="getPopularArticles" resultType="com.cn.bdth.vo.PopularArticlesVo">
+        select sea_classify_id, sea_blog.created_time, sea_blog.title, uri AS cover, sea_blog_id
+        from sea_blog
+                 inner join sea_resource sr on sea_blog.sea_resource_id = sr.sea_resource_id
+        where is_recommend = 1
+    </select>
+</mapper>
