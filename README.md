@@ -20,16 +20,20 @@
 - 支持文章发布功能
 - 自定义头像昵称
 - 文章评论 管理员可删除普通用户评论
-- 搜索文章
+- 搜索文章 (搜索板块下的文章每次都将根据类目随机获取)
 - 代码高亮
 - 图片内容本地化 不依赖于第三方OSS
 - 图片鉴赏
 - 文章点赞
+- 推荐文章
 - 专题管理
+
+  ` 无需第三方OSS存储,使用的是服务器存储空间 详细请看yml中的file配置 `
 
 ## 其他集成功能
 - GPT
 - SD
+- NEWBING
 
 ## 项目截图
 <img style="width:200px;height:400px" src="https://github.com/dulaiduwang003/ScribbleHub/assets/87460202/df0018af-2681-4a5a-b07b-e378dcec4a60" />
